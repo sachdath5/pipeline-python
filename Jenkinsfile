@@ -25,7 +25,7 @@ EOF
 stage('Deploy Containerized Python App') {
 steps {
 echo 'Deploying containerized Python application...'
-sh '''
+sh '
 ssh root@172.17.0.1 <<EOF
 mkdir -p /data/python-app
 cat <<PYTHON_APP > ~/python-app/app.py
